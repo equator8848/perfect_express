@@ -144,6 +144,8 @@
             }
             console.log(i, j, tempResult);
           }
+          // 计算折扣
+          tempResult *= this.targetPriceList[i].price.discount;
           resultList.push({
             expressCost: tempResult.toFixed(2),
             express: this.targetPriceList[i].express
